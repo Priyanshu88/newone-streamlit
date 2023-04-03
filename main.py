@@ -39,9 +39,9 @@ def object_detection_image():
             #     r'path', 'r')
             # lines = f.readlines()
             # classNames = [line.strip() for line in lines]
-            config_path = r'config_n_weights\yolov4-custom.cfg'
+            config_path = r'config_n_weights\yolov4.cfg'
             weights_path = r'config_n_weights\yolov4_best.weights'
-            net = cv2.dnn.readNet(config_path, weights_path)
+            net = cv2.dnn.readNetFromDarkNet(config_path, weights_path)
             net.setPreferableBackend(cv2.dnn.DNN_BACKEND_OPENCV)
             net.setPreferableTarget(cv2.dnn.DNN_TARGET_CPU)
             # net.setPreferableBackend(cv2.dnn.DNN_TARGET_CPU)
