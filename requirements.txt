@@ -1,7 +1,6 @@
 opencv-python-headless
 opencv-python
 Pillow
-urllib
 pandas
 numpy
 streamlit
