@@ -105,7 +105,7 @@ def object_detection_image():
             findObjects(outputs, img2)
             st.image(img2, caption='Proccesed Image.')
             # cv2.waitKey(1)
-            cv2.destroyAllWindows()
+            # cv2.destroyAllWindows()
             my_bar.progress(100)
 
 
