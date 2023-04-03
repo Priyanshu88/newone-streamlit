@@ -4,4 +4,3 @@ Pillow
 pandas
 numpy
 streamlit==0.87.0
-cmd = streamlit run --server.port $PORT setup.sh myapp/main.py
