@@ -32,13 +32,13 @@ def object_detection_image():
             nmsThreshold = st.slider(f'Threshold_{i}', 0, 100, 20)
             classNames = []
             whT = 608
-            # url = "https://raw.githubusercontent.com/Priyanshu88/yolo-streamlit/main/labels/coconames.txt"
-            # f = urllib.request.urlopen(url)
-            # classNames = [line.decode('utf-8').strip() for  line in f]
-            f = open(
-                r'C:\Users\pande\Documents\DS Intern\newonestreamlit\labels\coconames.txt', 'r')
-            lines = f.readlines()
-            classNames = [line.strip() for line in lines]
+            url = "https://raw.githubusercontent.com/Priyanshu88/newone-streamlit/main/labels/coconames.txt"
+            f = urllib.request.urlopen(url)
+            classNames = [line.decode('utf-8').strip() for  line in f]
+            # f = open(
+            #     r'path', 'r')
+            # lines = f.readlines()
+            # classNames = [line.strip() for line in lines]
             config_path = r'config_n_weights\yolov4-custom.cfg'
             weights_path = r'config_n_weights\yolov4_best.weights'
             net = cv2.dnn.readNetFromDarknet(config_path, weights_path)
