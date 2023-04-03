@@ -3,5 +3,5 @@ opencv-python
 Pillow
 pandas
 numpy
-streamlit
-streamlit run --server.port $PORT setup.sh myapp/main.py
+streamlit==0.87.0
+cmd = streamlit run --server.port $PORT setup.sh myapp/main.py
