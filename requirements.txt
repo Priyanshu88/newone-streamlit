@@ -1,6 +1,6 @@
 opencv-python-headless
 opencv-python
-PIL
+Pillow
 urllib
 pandas
 numpy
