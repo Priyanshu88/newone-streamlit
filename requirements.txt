@@ -1,0 +1,7 @@
+opencv-python-headless
+opencv-python
+PIL
+urllib
+pandas
+numpy
+streamlit
